@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // 🔹 Importante para que las rutas funcionen en GitHub Pages
+  base: "/", // 🔹 Importante para que las rutas funcionen en GitHub Pages
   publicDir: "public", // 🔹 Asegura que Vite copie archivos estáticos
 
   build: {
