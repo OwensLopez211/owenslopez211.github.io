@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(rootElement)
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/owenslopez211.github.io/">
+    <BrowserRouter basename="">
       <App />
       </BrowserRouter>
   </React.StrictMode>,
