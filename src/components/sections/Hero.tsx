@@ -14,7 +14,7 @@ const Hero = () => {
   const { theme } = useTheme();
 
   return (
-    <section className="w-full max-w-screen-xl md:min-h-[80vh] flex flex-col items-center justify-start md:justify-center px-5 md:px-10 relative mx-auto rounded-xl overflow-hidden">
+    <section className="w-full max-w-screen-xl min-h-screen flex flex-col items-center justify-center px-5 md:px-10 relative mx-auto rounded-xl overflow-hidden">
       {/* Background con gradientes temáticos */}
       <div 
         className="absolute inset-0 backdrop-blur-xl w-full rounded-xl"
@@ -64,10 +64,10 @@ const Hero = () => {
       />
 
       {/* Contenido principal */}
-      <div className="relative z-10 max-w-screen-xl w-full flex flex-col md:flex-row items-center justify-between gap-10 md:gap-10 pt-10 md:py-16 px-4 md:px-10">
+      <div className="relative z-10 max-w-screen-xl w-full flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 py-20">
         {/* Lado izquierdo - Texto */}
         <motion.div
-          className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 w-full md:w-1/2"
+          className="flex flex-col items-center md:items-start text-center md:text-left space-y-8 w-full md:w-1/2"
           initial="initial"
           animate="animate"
           variants={fadeInUp}
@@ -92,7 +92,7 @@ const Hero = () => {
           </motion.div>
 
           <h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold"
             style={{
               background: `linear-gradient(to right, ${theme.text.primary}, ${theme.text.secondary})`,
               WebkitBackgroundClip: 'text',
@@ -103,7 +103,7 @@ const Hero = () => {
           </h1>
 
           <motion.div
-            className="px-4 md:px-5 font-bold text-4xl md:text-5xl lg:text-6xl overflow-hidden py-2 md:py-3 justify-center rounded-lg flex items-center shadow-lg"
+            className="px-4 md:px-5 font-bold text-5xl md:text-6xl lg:text-7xl overflow-hidden py-2 md:py-3 justify-center rounded-lg flex items-center shadow-lg"
             style={{
               background: `linear-gradient(to right, ${theme.primary.light}, ${theme.primary.DEFAULT})`,
               color: theme.background.dark,
@@ -125,8 +125,8 @@ const Hero = () => {
             />
           </motion.div>
 
-          <motion.div className="w-full md:w-full" variants={fadeInUp}>
-            <h2 className="text-base md:text-lg leading-relaxed max-w-[540px] mx-auto md:mx-0">
+          <motion.div className="w-full">
+            <h2 className="text-lg md:text-xl leading-relaxed max-w-[600px] mx-auto md:mx-0">
               <GradientText
                 colors={[
                   theme.primary.light,
@@ -223,7 +223,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Lado derecho - Animación de código */}
-        <div className="w-full md:w-1/2 flex justify-center pb-8 md:pb-0">
+        <div className="w-full md:w-1/2 flex justify-center items-center min-h-[400px]">
           <CodeAnimation />
         </div>
       </div>
