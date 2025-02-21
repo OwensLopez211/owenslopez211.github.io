@@ -152,7 +152,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <button 
+            <a
+              href="/work"
               className="w-full sm:w-auto px-8 py-4 md:px-6 md:py-3 font-semibold rounded-lg shadow-lg transition-all duration-300"
               style={{
                 background: `linear-gradient(to right, ${theme.primary.DEFAULT}, ${theme.primary.light})`,
@@ -161,17 +162,7 @@ const Hero = () => {
               }}
             >
               Ver Proyectos
-            </button>
-            {/* <button 
-              className="w-full sm:w-auto px-8 py-4 md:px-6 md:py-3 font-semibold rounded-lg border transition-all duration-300"
-              style={{ 
-                backgroundColor: `${theme.background.dark}80`,
-                borderColor: theme.border.light,
-                color: theme.text.primary
-              }}
-            >
-              Contactar
-            </button> */}
+            </a>
           </motion.div>
 
           {/* Botones de redes sociales */}

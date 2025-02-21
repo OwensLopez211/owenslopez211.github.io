@@ -5,7 +5,7 @@ import { useTheme } from "../../../contexts/ThemeContext";
 
 const ProfileCard = () => {
   const { theme } = useTheme();
-  const profileImage = "/owens-dev-journey/Owens1.png";
+  const profileImage = "/public/gif/Owens.gif";
 
   const socialLinks = [
     { 
@@ -68,7 +68,7 @@ const ProfileCard = () => {
         >
           <div className="relative group">
             <div
-              className="absolute -inset-0.5 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-300"
+              className="absolute -inset-0.5 rounded-full opacity-75 blur transition duration-300"
               style={{
                 background: `linear-gradient(to right, ${theme.primary.light}, ${theme.secondary.light})`,
               }}
@@ -84,7 +84,7 @@ const ProfileCard = () => {
                 src={profileImage} 
                 alt="Perfil de Owens López" 
                 loading="lazy"
-                className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover scale-125"
               />
             </div>
           </div>
@@ -110,11 +110,11 @@ const ProfileCard = () => {
             <span className="relative flex h-2 w-2">
               <span
                 className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-                style={{ backgroundColor: theme.primary.light }}
+                style={{ backgroundColor: "#39FF14" }}
               />
               <span
                 className="relative inline-flex rounded-full h-2 w-2"
-                style={{ backgroundColor: theme.primary.DEFAULT }}
+                style={{ backgroundColor: "#39FF14" }}
               />
             </span>
             <span className="text-sm font-medium" style={{ color: theme.primary.light }}>
