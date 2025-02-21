@@ -5,7 +5,7 @@ import { useTheme } from "../../../contexts/ThemeContext";
 
 const ProfileCard = () => {
   const { theme } = useTheme();
-  const profileImage = "/public/gif/Owens.gif";
+  const profileImage = "https://owens.is-a.dev/public/gif/Owens.gif";
 
   const socialLinks = [
     { 
