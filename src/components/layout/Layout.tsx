@@ -4,20 +4,10 @@ import Header from "../sections/Header";
 import Footer from "../generals/Footer";
 import Squares from "./Squares";
 import { useTheme } from "../../contexts/ThemeContext";
-import { useState, useEffect } from "react";
 
 const Layout = () => {
   const { theme } = useTheme();
   const location = useLocation();
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  
-  useEffect(() => {
-    // Only log when component mounts
-    console.log("Layout mounted");
-  }, []);
-
-  // Use header visibility state in the layout
-  const mainPaddingTop = isHeaderVisible ? "pt-[60px]" : "pt-0";
   
   const pageTransitionVariants = {
     initial: { opacity: 0, y: 10 },
@@ -41,13 +31,13 @@ const Layout = () => {
       </div>
 
       {/* Header */}
-      <Header setIsHeaderVisible={setIsHeaderVisible} />
+      <Header />
 
       {/* Page container with transitions */}
       <div className="flex-1">
         <AnimatePresence mode="wait">
           <motion.main
-            className={`relative flex flex-col w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 ${mainPaddingTop} z-10`}
+            className="relative flex flex-col w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-[60px] z-10"
             variants={pageTransitionVariants}
             initial="initial"
             animate="animate"

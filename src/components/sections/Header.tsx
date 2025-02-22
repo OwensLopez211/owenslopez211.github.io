@@ -1,47 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect} from "react";
 import { motion } from "framer-motion";
 import { Home, User, Briefcase } from "lucide-react";
 
-
-interface HeaderProps {
-  setIsHeaderVisible: (visible: boolean) => void;
-}
-
-const Header: React.FC<HeaderProps> = ({ setIsHeaderVisible }) => {
-  const [isVisible, setIsVisible] = useState(true);
+const Header = () => {
   const location = useLocation();
 
-  // Manejo del scroll optimizado
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const isScrollingUp = currentScrollY < lastScrollY;
-      const isAtTop = currentScrollY < 10;
-
-      if ((isAtTop || isScrollingUp) && !isVisible) {
-        setIsVisible(true);
-        setIsHeaderVisible(true);
-      } else if (!isAtTop && !isScrollingUp && isVisible) {
-        setIsVisible(false);
-        setIsHeaderVisible(false);
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isVisible, setIsHeaderVisible]);
-
   return (
-    <motion.header
+    <header
       className="fixed top-0 left-0 w-full z-50 bg-opacity-90 backdrop-blur-md"
-      initial={{ y: 0 }}
-      animate={{ y: isVisible ? 0 : "-100%" }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
     >
       <div className="relative h-[60px] px-6 flex justify-center items-center">
         {/* 🔹 Navegación con animación en el menú */}
@@ -52,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ setIsHeaderVisible }) => {
               { to: "/work", icon: Briefcase, label: "Proyectos" },
               { to: "/about", icon: User, label: "Acerca" }
             ].map(({ to, icon: Icon, label }) => {
-              const isActive = location.pathname === to; // Detecta qué ruta está activa
+              const isActive = location.pathname === to;
 
               return (
                 <Link
@@ -79,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ setIsHeaderVisible }) => {
           </div>
         </nav>
       </div>
-    </motion.header>
+    </header>
   );
 };
 

@@ -3,9 +3,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MapPin, Briefcase } from "lucide-react";
 import { useTheme } from "../../../contexts/ThemeContext";
 
+
 const ProfileCard = () => {
   const { theme } = useTheme();
-  const profileImage = "https://owens.is-a.dev/public/gif/Owens.gif";
+  const profileImage = "/gif/Owens.gif";
 
   const socialLinks = [
     { 
