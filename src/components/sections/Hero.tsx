@@ -84,7 +84,7 @@ const Hero = () => {
           >
             <span 
               className="h-2 w-2 rounded-full animate-pulse"
-              style={{ backgroundColor: theme.primary.light }}
+              style={{ backgroundColor: "#39FF14" }}
             />
             <span style={{ color: theme.text.secondary }}>
               Disponible para proyectos
