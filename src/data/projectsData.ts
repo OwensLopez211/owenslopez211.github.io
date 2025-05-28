@@ -1,6 +1,6 @@
 export const projects = [
     {
-      id: "7",
+      id: "1",
       title: "E-Mind - Conecta Pacientes con Psicólogos",
       description: "Plataforma web que conecta pacientes con psicólogos profesionales, facilitando la búsqueda, programación y gestión de sesiones de terapia en línea.",
       technologies: ["React", "Django", "PostgreSQL", "Tailwind CSS", "Figma"],
@@ -12,7 +12,7 @@ export const projects = [
     },
   
     {
-      id: "1",
+      id: "2",
       title: "Portafolio - Owens Dev Journey",
       description: "Portafolio profesional interactivo desarrollado con React, TypeScript y Tailwind CSS, destacando animaciones fluidas, diseño responsive y efectos visuales avanzados.",
       technologies: ["React", "Vite", "TypeScript", "Tailwind CSS", "Figma", "Others"],
@@ -23,7 +23,7 @@ export const projects = [
       isPrivate: false
     },
     {
-      id: "2",
+      id: "3",
       title: "Proyecto tesis: Monitoreo Inteligente de Combustible",
       description: "Plataforma de monitoreo de combustible en tiempo real con autenticación segura y sistema de alertas inteligentes.",
       technologies: ["Django", "React", "PostgreSQL", "Tailwind CSS", "Figma", "Others"],
@@ -31,16 +31,6 @@ export const projects = [
       details: "GasAlert es una plataforma innovadora diseñada para la monitorización en tiempo real de niveles de combustible en estaciones de servicio y depósitos. Su objetivo es optimizar la gestión del suministro de combustible, prevenir desabastecimientos y detectar posibles fugas o irregularidades mediante un sistema de alertas inteligentes.\n\nLa plataforma está estructurada con un sistema de autenticación seguro y una jerarquía de usuarios que incluye Operadores, Técnicos y Administradores, permitiendo una gestión eficiente de los tanques y estaciones.\n\nCaracterísticas principales:\n✅ Monitoreo en tiempo real de los niveles de combustible en los tanques.\n✅ Alertas y notificaciones automáticas ante niveles críticos o anomalías.\n✅ Gestión de usuarios y permisos para un acceso seguro y controlado.\n✅ Dashboard intuitivo, diseñado para facilitar la supervisión y toma de decisiones.\n✅ Accesibilidad remota, permitiendo la consulta de datos desde cualquier dispositivo.",
       githubUrl: "https://github.com/OwensLopez211/gasalert-frontend",
       isPrivate: false
-    },
-    
-    {
-      id: "3",
-      title: "E-Commerce Full Stack",
-      description: "Plataforma de comercio electrónico con autenticación y pagos.",
-      technologies: ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
-      libraries: ["Zustand", "NextAuth", "Tailwind"],
-      details: "Este proyecto implementa un sistema de pagos con Stripe y una base de datos escalable con Prisma y PostgreSQL.",
-      isPrivate: true
     },
   
     {
@@ -77,7 +67,7 @@ export const projects = [
       "isPrivate": true
     },
     {
-      "id": "8",
+      "id": "7",
       "title": "Innovacore ERP - Sistema de Gestión Empresarial",
       "description": "Sistema ERP moderno en desarrollo activo, construido con Next.js 14 y Supabase. Diseñado para gestión empresarial con múltiples roles y control de acceso granular. [EN DESARROLLO]",
       "technologies": ["Next.js 14", "Supabase", "TypeScript", "Tailwind CSS", "Others"],
