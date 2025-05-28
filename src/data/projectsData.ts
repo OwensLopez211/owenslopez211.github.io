@@ -1,5 +1,17 @@
 export const projects = [
     {
+      id: "7",
+      title: "E-Mind - Conecta Pacientes con Psicólogos",
+      description: "Plataforma web que conecta pacientes con psicólogos profesionales, facilitando la búsqueda, programación y gestión de sesiones de terapia en línea.",
+      technologies: ["React", "Django", "PostgreSQL", "Tailwind CSS", "Figma"],
+      libraries: ["React Router", "Axios", "Django REST Framework", "Framer Motion", "Heroicons", "Calendar API", "Others"],
+      details: "eMind es una plataforma centrada en la salud mental, diseñada para facilitar el acceso a terapia psicológica de manera profesional y segura. Permite a los pacientes encontrar psicólogos certificados, agendar sesiones de forma rápida y llevar un control organizado de sus citas.\n\nCaracterísticas principales:\n✅ Búsqueda de psicólogos por especialidad, enfoque terapéutico y disponibilidad.\n✅ Agenda interactiva para reservar sesiones en línea.\n✅ Panel para pacientes y profesionales con gestión de sesiones, historial y datos relevantes.\n✅ Notificaciones y recordatorios automáticos.\n✅ Interfaz moderna y responsiva con enfoque en usabilidad y experiencia de usuario.\n\nEl sistema combina un backend robusto en Django con un frontend intuitivo en React, garantizando rendimiento, seguridad y escalabilidad para una experiencia confiable tanto para pacientes como para terapeutas.",
+      liveUrl: "https://emindapp.cl/",
+      githubUrl: "https://github.com/OwensLopez211/PsicologosAPv1",
+      isPrivate: false
+    },
+  
+    {
       id: "1",
       title: "Portafolio - Owens Dev Journey",
       description: "Portafolio profesional interactivo desarrollado con React, TypeScript y Tailwind CSS, destacando animaciones fluidas, diseño responsive y efectos visuales avanzados.",
@@ -75,6 +87,7 @@ export const projects = [
       "githubUrl": "https://github.com/OwensLopez211/InnovaCoreERP",
       "isPrivate": true
     }
+
     
     
   ];
