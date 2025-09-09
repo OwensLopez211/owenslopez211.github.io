@@ -7,6 +7,13 @@ const CertificationsCard = () => {
 
   const certifications = [
     {
+      title: "AWS Certified Cloud Practitioner",
+      organization: "Amazon Web Services (AWS)",
+      date: "2025",
+      description: "Certificación fundamental de AWS que valida conocimientos generales de la nube de AWS, servicios principales, seguridad, arquitectura, precios y soporte.",
+      icon: Building2
+    },
+    {
       title: "Certificación C1 en Inglés",
       organization: "EF Standard English Test (EF SET)",
       date: "2024",

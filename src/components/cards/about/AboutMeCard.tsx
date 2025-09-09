@@ -91,9 +91,9 @@ const AboutMeCard = () => {
             {/* Objetivos y pasiones */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
-                { icon: Rocket, title: 'Desarrollo', text: 'Experiencia en React y Django', color: theme.primary.light },
-                { icon: Target, title: 'Enfoque', text: 'Interfaces intuitivas y escalables', color: theme.secondary.light },
-                { icon: Lightbulb, title: 'Objetivo', text: 'Soluciones de impacto positivo', color: theme.primary.light },
+                { icon: Rocket, title: 'Stack Tecnológico', text: 'React, TypeScript, Node.js, AWS', color: theme.primary.light },
+                { icon: Target, title: 'Especialización', text: 'Plataformas SaaS multi-tenant', color: theme.secondary.light },
+                { icon: Lightbulb, title: 'Enfoque', text: 'Automatización y escalabilidad', color: theme.primary.light },
               ].map(({ icon: Icon, title, text, color }, index) => (
                 <div
                   key={index}
@@ -119,9 +119,9 @@ const AboutMeCard = () => {
                 color: theme.text.secondary,
               }}
             >
-              Desarrollador apasionado con experiencia en React y Django, 
-              enfocado en crear interfaces intuitivas y sistemas escalables. 
-              Busco soluciones eficientes y colaboro en proyectos con un impacto positivo.
+              Desarrollador Full Stack especializado en plataformas SaaS multi-tenant con React, TypeScript, Node.js y AWS. 
+              Experiencia construyendo soluciones escalables que automatizan procesos empresariales y mejoran la eficiencia operativa. 
+              Enfocado en arquitecturas robustas, CI/CD y metodologías ágiles para entregar productos de alto impacto.
             </p>
           </div>
         </div>

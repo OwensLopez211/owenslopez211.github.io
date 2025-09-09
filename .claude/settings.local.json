@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/c/Users/Owens/Desktop/screens hiperbarica/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

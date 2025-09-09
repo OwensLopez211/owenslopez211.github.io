@@ -21,19 +21,29 @@ const SkillsCard = () => {
   const { theme } = useTheme();
 
   const habilidades = {
+    "Lenguajes de Programación": [
+      { name: "JavaScript (ES6+)", icon: Braces },
+      { name: "TypeScript", icon: Braces },
+      { name: "Python", icon: Cpu },
+      { name: "SQL", icon: Database }
+    ],
     "Desarrollo Frontend": [
       { name: "React.js", icon: Code2 },
-      { name: "JavaScript (ES6+)", icon: Braces },
       { name: "TailwindCSS", icon: Wind },
       { name: "Diseño Responsivo", icon: Layout },
       { name: "Manejo de Estado", icon: Layers }
     ],
-    "Desarrollo Backend": [
+    "Frameworks Backend": [
       { name: "Django", icon: Server },
-      { name: "Python", icon: Cpu },
+      { name: "Express.js", icon: Server },
       { name: "APIs RESTful", icon: Database },
-      { name: "Diseño de Bases de Datos", icon: Database },
       { name: "Autenticación y Autorización", icon: KeyRound }
+    ],
+    "Bases de Datos": [
+      { name: "PostgreSQL", icon: Database },
+      { name: "MySQL", icon: Database },
+      { name: "DynamoDB", icon: Database },
+      { name: "Aurora DB", icon: Database }
     ],
     "Herramientas de Desarrollo": [
       { name: "Git y Control de Versiones", icon: GitBranch },

@@ -2,14 +2,12 @@ import { motion } from "framer-motion";
 import { 
   BarChart3, 
   FileSpreadsheet,
-  Database,
   Server,
   Boxes,
   GitBranch,
   Terminal,
   Layout,
-  Container,
-  Shield
+  Container
 } from "lucide-react";
 import { useTheme } from "../../../contexts/ThemeContext";
 
@@ -18,22 +16,19 @@ const ExtraSkillsCard = () => {
 
   const extraSkills = {
     "ANÁLISIS DE DATOS": [
-      { name: "Power BI", icon: BarChart3, level: "Avanzado" },
-      { name: "Excel", icon: FileSpreadsheet, level: "Experto" },
-    ],
-    "BASES DE DATOS": [
-      { name: "SQL (PostgreSQL, MySQL)", icon: Database, level: "Avanzado" },
-      { name: "NoSQL (MongoDB)", icon: Shield, level: "Intermedio" },
-      { name: "Redis", icon: Server, level: "Intermedio" }
+      { name: "Power BI", icon: BarChart3 },
+      { name: "Excel", icon: FileSpreadsheet },
     ],
     "INFRAESTRUCTURA Y SERVIDOR": [
-      { name: "Nginx", icon: Layout, level: "Intermedio" },
-      { name: "Gunicorn", icon: Server, level: "Intermedio" },
-      { name: "Docker", icon: Container, level: "Avanzado" }
+      { name: "Nginx", icon: Layout },
+      { name: "Gunicorn", icon: Server },
+      { name: "Docker", icon: Container },
+      { name: "Terraform", icon: Server },
+      { name: "CloudFormation", icon: Server }
     ],
     "HERRAMIENTAS DE CONTROL": [
-      { name: "Git", icon: GitBranch, level: "Avanzado" },
-      { name: "Linux", icon: Terminal, level: "Intermedio" }
+      { name: "Git", icon: GitBranch },
+      { name: "Linux", icon: Terminal }
     ]
   };
 
@@ -119,9 +114,6 @@ const ExtraSkillsCard = () => {
                     <div className="flex-grow min-w-0">
                       <p className="text-sm font-medium" style={{ color: theme.text.primary }}>
                         {tech.name}
-                      </p>
-                      <p className="text-xs mt-0.5" style={{ color: theme.text.secondary }}>
-                        {tech.level}
                       </p>
                     </div>
                   </motion.div>

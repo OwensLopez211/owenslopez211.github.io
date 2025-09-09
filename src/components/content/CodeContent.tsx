@@ -123,7 +123,7 @@ export interface CodeLine {
         { text: ': [', color: 'text-white' }, 
         { text: '"Django"', color: 'text-green-400' }, 
         { text: ', ', color: 'text-white' }, 
-        { text: '"Laravel PHP"', color: 'text-green-400' }, 
+        { text: '"Express.js"', color: 'text-green-400' }, 
         { text: '],', color: 'text-white' }
       ] 
     },
